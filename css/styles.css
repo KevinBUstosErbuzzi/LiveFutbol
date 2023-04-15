@@ -1,0 +1,259 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Urbanist&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/pexels-cottonbro-studio-10349971.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.hero .cabecera {
+    display: flex;
+    font-size: 1.7em;
+    font-family: 'Urbanist', sans-serif;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    position: fixed;
+    
+}
+
+.hero .cabecera .logo {
+    width: 300px;
+    padding: 0 0 0 50px;
+}
+
+.hero .cabecera .links {
+    text-align: center;
+    width: 100%;
+    border-bottom: #FFD500 solid 1px;
+    padding-right: 50px;
+    align-items: flex-end;
+    display: flex;
+    justify-content: right;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+
+.titulo {
+    font-size: 2.5rem;
+}
+
+.subtitulo { 
+    font-size: 8rem;
+    color: #FFD500;
+    line-height: 0.9em;
+}
+
+@media (max-width: 720px) {
+    .titulo {font-size: 1.5rem;}
+    .subtitulo {font-size: 5rem;}
+    
+}
+
+.llamado {  border: none;
+            width: 250px;
+            height: 80px;
+            background-color: #ffd50000;
+            border-radius: 100px; 
+            color: #BF9900;
+            border: 2px solid #BF9900; 
+            font-size: 30px; 
+            border-bottom: #BF9900 solid 10px;}
+            
+
+.llamado:hover {
+        background-color: #FFD500;
+        color: black;
+}
+
+.col50 {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10%;  
+    padding-bottom: 10px;
+    
+}
+
+img .col50 {
+    max-width: 500px;
+}
+
+.boton {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.partidos { width: 100%;
+    height: 100vh; /* altura de visor */
+   
+    display: block;
+}
+
+.parallax {
+    position: absolute;
+    background-image: url('/stadium-931975_1920.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    z-index: -1;
+
+}
+.fila50{height: 60%;
+            display: flex;
+               position: relative;
+            align-items: center;
+            justify-content: center; }
+
+.fila25{height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 1px 0px;
+        position: relative;}
+
+.gris {background-color: #BF9900;}
+
+
+
+.fuentecool {
+    font-family: 'Staatliches', cursive;
+}
+
+.fuenteseria {
+    font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+
+}
+
+h2 {font-size: 3em;
+    color: white;}
+
+    @media (max-width: 720px) {
+        h1 {font-size: 3rem;}
+        h2 {font-size: 1.5rem; } }
+    
+        
+.fila25 p {font-size: 2em;}
+
+.subscripcion { height: 100vh;
+width: 100%;
+background-image: url('/victory-2707319_1920.jpg');}
+
+.Footer {
+    background-color: #FFD500;
+    border-top: #FFD500 5px solid;
+    width: 100%;
+    height: 20vh;
+    border-radius: 60px 60px 0px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    
+}
+
+.piedepagina {background-color: black;}
+
+.col33 {width: 33,33333%;}
+
+.resultados {background-color: #FFD500;
+            border-radius: 20px;
+            min-width: 800px;
+            height: 300px;
+            font-size: 24px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 5px solid #BF9900;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            
+        }
+
+.resultados img { max-height: 150px; }
+
+.resultados .col50 {padding: 0;
+                    margin: 0;
+                    justify-content: center;
+                    align-items: center;}
+
+.goles {width: 50px;
+        height: 50px;
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border: black solid 1px;
+        position: relative;
+        z-index: 4;
+        right: -44%;
+        color: white;}
+
+.red {background-color: red;}
+.green {background-color: green;}
+
+.formulario {
+            width: 500px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 3px solid #FFD500;
+            border-radius: 30px;
+            padding: 20px;
+            color: #FFD500;
+            font-size: 30px;
+            }
+
+.vacio {background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        border: 0;
+        border-bottom: #FFD500 solid 3px;
+        border-left: #FFD500 solid 1px;
+        min-height: 30px;}
+
+input {background-color: #FFD500;
+        color: black;
+        border: 0;
+        height: 30px;
+        border-radius: 10px;}
+
+.links a {
+    font-size: inherit;
+    color: inherit;
+}
+
+#piedepagina {background-color: black;}
+
+
